@@ -1,0 +1,57 @@
+body {
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main > div {
+    border: 1px solid  #cccccc;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+div > img {
+    margin-left: 200px;
+    margin-right: 300px;
+}
+
+.info {
+    margin-top: 40px;
+}
+
+/* Creat List Form */
+
+.h_create {
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.add_auction {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+label, input {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+button {
+    align-self: center;
+    margin: 10px;
+    width: 125px;
+}
+
+textarea {
+    height: 150px;
+}

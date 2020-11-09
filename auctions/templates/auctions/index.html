@@ -2,6 +2,19 @@
 
 {% block body %}
     <h2>Active Listings</h2>
-
-    TODO
+    
+    <main> 
+    {% for auction in auctions %}
+        <div>
+            <img src="{{ auction.auction_image.url }}" alt="{{ auction.auction_title }}" height="250">
+            <div class="info">
+                <h4><b>{{auction.auction_title}}</b></h4>
+                <p><b>Price:</b> ${{auction.auction_price}}</p>
+                <p><b>Description:</b> {{auction.auction_description}}</p>
+                <p style="color: gray;"><b>Created:</b> <time>{{auction.created_date}}</time>, <time>{{auction.created_time}}</time></p>
+            </div>
+        </div>
+    {% endfor %}
+    </main>
+    
 {% endblock %}
